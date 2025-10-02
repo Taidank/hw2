@@ -1,3 +1,18 @@
+/* <!--
+File: pacfic.css
+GUI Assignment: Hw2 Recreating css website
+Tai Dao, UMass Lowell Managament Information System Major, tai_dao@student.uml.edu
+
+CSS file given to us, as we had to make changes to recreate a website that was used as a reference. This css file tries to imitates 
+the website to the best of it's ability. It has a slight error with the nav bar background but besides that everything else should be near identical.
+
+Copyright (c) 2025 by Tai Dao. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Tai on October 1, 2025 at 10:00 PM
+-->*/
+
+
+/*Basic Code given to us*/
 header,
 hgroup,
 nav,
@@ -8,8 +23,9 @@ aside,
 section,
 article {
 	display: block;
-}
+} /**/
 
+/*setting the background of the body to the gradient jpg provided*/
 body {
 	background-color: white;
 	color: #666666;
@@ -17,12 +33,14 @@ body {
 	background-image: url(ptrbackground.jpg);
 }
 
+/*background color of the nav bar and setting so it flows with the size of the UL (float)*/
 nav {
 	background-color: #90c8e3;
 	float: left;
 	flex-shrink: 0;
 }
 
+/*styling for Unordered list (removed bullet points and fixed fitting in the space*/
 nav ul {
 	font-size: 1.2em;
 	list-style-type: none;
@@ -30,10 +48,11 @@ nav ul {
 	padding-bottom: 270px;
 }
 
+/*fixing outer box layer*/
 nav ul li {
 	margin: 2px 0;
 }
-
+ /*removed underline and made the words bold*/
 nav ul a {
 	text-decoration: none;
 	font-weight: bold;
@@ -54,7 +73,7 @@ h1 {
 	color: white;
 
 }
-
+/*Setting the given image as background in header and fitting the image to fit the box size*/
 header {
 	background-image: url(sunset.jpg);
 	background-repeat: no-repeat;
@@ -73,15 +92,17 @@ h1,
 h2 {
 	font-family: Georgia, "Times New Roman", serif;
 }
-
+/*Changing character sizing*/
 #contact {
 	font-size: 90%;
 }
-
+/*adding white space to left side to create that split between the nav and content*/
 #content {
 	padding-left: 220px;
 }
 
+/*Change bullet list to image marger and moved the bullet points to inside the block rather than outside of the list blocks
+it gets the bullet points to center with paragraphs*/
 #content ul {
 	list-style-image: url(marker.gif);
 	margin-left: 0;
@@ -92,6 +113,7 @@ dt {
 	color: #000033;
 }
 
+/*adjusting the footer with spacing functions and add area around to imitate website*/
 footer {
 	font-family: Georgia, "Times New Roman", serif;
 	font-style: italic;
@@ -101,6 +123,7 @@ footer {
 	margin-top: 20px;
 }
 
+/*given width rules but centering and letting the background other wrapper be white*/
 #wrapper {
 	width: 80%;
 	min-width: 600px;
@@ -112,11 +135,13 @@ footer {
 	position:relative;
 }
 
+/*c span tags get character color change and are bolded*/
 #content span {
 	color: #1c5e7f;
 	font-weight: bold;
 }
 
+/*Allows the content inside the wrapper to wrap around the image when browser is shrunk.*/
 #content img {
 	float: left;
 	margin-right: 20px;
